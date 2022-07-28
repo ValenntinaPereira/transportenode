@@ -1,27 +1,28 @@
 <div class="contacto">
     <div>
         <h2>Contacto rapido</h2>
-        <form action="" method="" class="form">
+        <form action="/contacto" method="post" class="form">
             <p>
                 <label for="">Nombre</label>
-                <input type="text" name="" id="">
+                <input type="text" name="nombre" id="">
             </p>
             <p>
-                <label for="">Mail</label>
-                <input type="email" name="" id="">
+                <label for="">Email</label>
+                <input type="email" name="email" id="">
             </p>
             <p>
                 <label for="">Telefono</label>
-                <input type="text" name="" id="">
+                <input type="text" name="tel" id="">
             </p>
             <p>
                 <label for="">Mensaje</label>
-                <textarea name="" id=""></textarea>
+                <textarea name="comentarios" id=""></textarea>
             </p>
             <p>
                 <input type="submit" value="Enviar">
             </p>
         </form>
+        {{message}}
     </div>
     <div class="datos">
         <h2>Otras vias de comunicacion</h2>
