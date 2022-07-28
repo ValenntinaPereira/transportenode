@@ -1,0 +1,146 @@
+/* font-family: 'Open Sans', sans-serif; */
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+header{
+    background-color: #2e64a1;
+    padding: 16px 0;
+}
+h1{
+    color: white;
+    font-size: 40px;
+    font-weight: 100;
+    font-style: italic;
+    display: inline-block;
+    position: relative;
+    bottom: 35px;
+    margin: auto 10px;
+}
+nav{
+    background-color: #6da9ed;
+    margin-bottom: 20px;
+
+}
+nav ul {
+    list-style: none;
+    margin: 0%;
+    padding: 0;
+    display: flex;
+}
+nav ul li{
+    flex-grow: 1;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 3px 6px;
+    display: block;
+    text-align: center;
+    
+}
+
+nav ul li a:hover{
+    background-color: rgba(0, 0, 0, .3);
+    
+}
+nav ul li a.activo{
+    background-color: #4c76a5;
+}
+footer{
+    background-color: #ccc;
+    clear: both;
+    color: #333;
+    text-align: center;
+    padding: 40px 0;
+    margin-top: 10px;
+ }
+.holder{
+    max-width: 960px;
+    margin: 0 auto;
+}
+h2{
+    color: #2e64a1;
+    font-weight: 400;
+}
+.columnas{
+    display: flex;
+    justify-content: space-between;
+}
+/* inicio home */
+
+.bienvenidos{
+    width: 75%;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+.testimonios{
+    width: 25%;
+    
+}
+.bienvenidos p{
+    font-size: 20px;
+}
+.testimonio{
+    background-color: #ccc;
+    padding: 16px;
+}
+.testimonio .cita{
+    font-size: 22px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+.testimonio .autor{
+    display: block;
+    font-size: 10px;
+    text-align: center;
+    margin: 12px 0;
+}
+
+/* fin home */
+/* inicio nosotros */
+
+.historia p{
+        font-size: 0.8rem;
+}
+.persona{
+    border: 1px solid grey;
+    border-radius: 5px;
+    width: 18%;
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-right: 2%;
+}
+.persona:last-child{
+    margin-right: 0%;
+}
+.persona:nth-child(3n){
+    background-color: #2e64a1;
+}
+.persona img{
+    border-radius: 50%;
+    max-width: 60%;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+.persona h5,
+.persona h6 {
+    margin: 0;
+    font-weight: normal;
+    color: #2e64a1;
+}
+.persona h5{
+    font-size: 14px;
+    margin-top: 5px;
+}
+.persona h6{
+    font-size: 11px;
+    font-style: italic;
+}
+.persona p{
+    color: #666;
+    font-size: 10px;
+}

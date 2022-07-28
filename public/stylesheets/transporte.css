@@ -1,0 +1,241 @@
+/* font-family: 'Open Sans', sans-serif; */
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+header{
+    background-color: #2e64a1;
+    padding: 16px 0;
+}
+h1{
+    color: white;
+    font-size: 40px;
+    font-weight: 100;
+    font-style: italic;
+    display: inline-block;
+    position: relative;
+    bottom: 35px;
+    margin: auto 10px;
+}
+nav{
+    background-color: #6da9ed;
+    margin-bottom: 20px;
+
+}
+nav ul {
+    list-style: none;
+    margin: 0%;
+    padding: 0;
+    display: flex;
+}
+nav ul li{
+    flex-grow: 1;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 3px 6px;
+    display: block;
+    text-align: center;
+    
+}
+
+nav ul li a:hover{
+    background-color: rgba(0, 0, 0, .3);
+    
+}
+nav ul li a.activo{
+    background-color: #4c76a5;
+}
+footer{
+    background-color: #ccc;
+    clear: both;
+    color: #333;
+    text-align: center;
+    padding: 40px 0;
+    margin-top: 10px;
+ }
+.holder{
+    max-width: 960px;
+    margin: 0 auto;
+}
+h2{
+    color: #2e64a1;
+    font-weight: 400;
+}
+.columnas{
+    display: flex;
+    justify-content: space-between;
+}
+/* inicio home */
+
+.bienvenidos{
+    width: 75%;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+.testimonios{
+    width: 25%;
+    
+}
+.bienvenidos p{
+    font-size: 20px;
+}
+.testimonio{
+    background-color: #ccc;
+    padding: 16px;
+}
+.testimonio .cita{
+    font-size: 22px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+.testimonio .autor{
+    display: block;
+    font-size: 10px;
+    text-align: center;
+    margin: 12px 0;
+}
+
+/* fin home */
+/* inicio nosotros */
+
+.historia p{
+        font-size: 0.8rem;
+}
+.personas{
+    display: flex;
+    justify-content: space-between;
+}
+.persona{
+    border: 1px solid grey;
+    border-radius: 5px;
+    width: 18%;
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.persona img{
+    border-radius: 50%;
+    max-width: 60%;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+.persona h5,
+.persona h6 {
+    margin: 0;
+    font-weight: normal;
+    color: #2e64a1;
+}
+.persona h5{
+    font-size: 14px;
+    margin-top: 5px;
+}
+.persona h6{
+    font-size: 11px;
+    font-style: italic;
+}
+.persona p{
+    color: #666;
+    font-size: 10px;
+}
+/*FIN NOSOTROS*/
+/*INICIO SERVICIOS*/
+.servicio{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 16px;
+    margin: 16px 0;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+.servicio:nth-child(even){
+    flex-direction: row-reverse;
+}
+.servicio .info h4{
+    color: #2e64a1;
+    font-weight: 500;
+    font-style: italic;
+    border-bottom: 1px solid #2e64a1;
+    padding-bottom: 5px;
+}
+.servicio .info p{
+    font-size: 14px;
+    line-height: 19px;
+}
+.servicio img{
+    border-radius: 13px;
+    display: block;
+    max-width: 225px;
+}
+/*FIN SERVICIOS*/
+/*INICIO GALERIA*/
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.galeria img{
+    border: 1px solid #ccc;
+    padding: 5px;
+    width: 18%;
+    margin-bottom: 15px;
+    margin-right: 2%;
+    box-sizing: border-box;
+}
+.galeria img:nth-child(5n+1){
+    border: 1px solid red;
+}
+.contacto{
+    display: flex;
+    gap: 24px;
+}
+.contacto div{
+    width: 100%;
+}
+div.datos{
+    border-left: 2px solid #666;
+    padding-left: 10px;
+}
+.datos p{
+    font-size: 14px;
+}
+.datos ul li{
+    font-size: 13px;
+}
+.form p{
+    display: flex;
+}
+.form p label{
+    min-width: 80px;
+    display: flex;
+    align-items: center;
+}
+.form p input,
+.form p textarea{
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+    border: 1px solid #999;
+    padding: 6px 10px;
+}
+.form p textarea{
+    height: 150px;
+    resize: none;
+}
+.form input[type="submit"]{
+    background-color: #2e64a1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    color: white;
+    font-size: 16px;
+    padding: 6px 20px;
+    width: auto;
+    position: relative; 
+    left: 80%;
+    cursor: pointer;
+}
+.form input[type="submit"]:hover{
+    background-color: #6da9ed
+}
