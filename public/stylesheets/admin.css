@@ -1,0 +1,12 @@
+header{
+    text-align: center;
+}
+header h1{
+    bottom: 0;
+}
+.margenes{
+    margin-top: 20px;
+}
+.mb-3{
+    width: 50%;
+}
