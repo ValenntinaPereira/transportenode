@@ -18,6 +18,9 @@
                 <div class="col-auto">
                     <button type="submit" class="btn btn-primary">Agregar</button>
                 </div>
+                {{#if error}}
+                 <p><br>{{message}}</p>
+                {{/if}}
             </form>
          
         </div>
