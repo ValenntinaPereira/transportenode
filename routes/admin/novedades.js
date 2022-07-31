@@ -45,4 +45,24 @@ router.post('/agregar', async (req, res, next) => {
 
 })
 
+router.get('/eliminar/:id', async (req, res, next) =>{
+    console.log(req.params.id);
+
+    var id = req.params.id;
+    await novedadesModel.deleteNovedadByID(id)
+    res.redirect('/admin/novedades')
+
+})
+
+
+router.get('/modificar/:id',async(req,res,next) =>{
+  var id = req.params.id
+  var novedad = await novedadesModel.getNovedadesByID(id);
+  res.render('admin/modificar',{
+    layout:'admin/layout',
+    novedad
+  })
+
+
+})
 module.exports = router;

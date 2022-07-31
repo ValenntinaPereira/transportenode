@@ -20,4 +20,20 @@ async function insertNovedades(obj){
     }
 }
 
-module.exports = { getNovedades,insertNovedades }
+async function deleteNovedadByID(id){
+    var query = 'delete from novedades where id = ?';
+    var rows = await pool.query(query,[id]);
+    return rows;
+}
+
+async function getNovedadesByID(id){
+    var query = 'select * from novedades where id = ?'
+    var rows = await pool.query(query,[id]);
+    return rows
+}
+
+async function updateNovedadesByID(obj){
+    var query = 'update '
+}
+
+module.exports = { getNovedades,insertNovedades,deleteNovedadByID  }
